@@ -1,0 +1,15 @@
+opam-version: "1"
+maintainer: "alavrik@piqi.org"
+build: [
+  ["sh" "-c" ". ./setenv.sh; make deps"]
+  ["ln" "-s" "3.12" "piqi-camlp4/4.00"]
+  ["sh" "-c" ". ./setenv.sh; make"]
+  ["sh" "-c" ". ./setenv.sh; make ocaml"]
+  ["sh" "-c" ". ./setenv.sh; PIQI_PREFIX=%{prefix}% make install"]
+  ["sh" "-c" ". ./setenv.sh; make ocaml-install"]
+]
+remove: [
+  ["rm" "-f" "%{prefix}%/bin/piqi" "%{prefix}%/bin/piqic"]
+  ["ocamlfind" "remove" "piqi"]
+]
+depends: ["ocamlfind"]
