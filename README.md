@@ -23,8 +23,8 @@ opam install piqi
 This command will install the latest development version of Piqi, including
 `piqi` and `piqic` executables and piqi libraries for OCaml.
 
-The latest stable Piqi 0.5.7 release can be also installed via OPAM. To install
-it, run
+The previous stable Piqi 0.5.7 release can be also installed via OPAM. To
+install it, run
 
 ```
 opam install piqi.0.5.7
