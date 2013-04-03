@@ -1,7 +1,6 @@
 opam-version: "1"
 maintainer: "alavrik@piqi.org"
 build: [
-  ["git" "checkout" "dev"]
   ["./configure" "--prefix" "%{prefix}%"]
   ["make"]
   ["make" "ocaml"]
