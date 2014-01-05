@@ -1,14 +1,19 @@
 opam-version: "1"
 maintainer: "alavrik@piqi.org"
 build: [
-  ["./configure" "--prefix" "%{prefix}%"]
+  ["./configure" "--prefix" prefix]
   [make]
   [make "ocaml"]
   [make "install"]
   [make "ocaml-install"]
 ]
 remove: [
-  ["rm" "-f" "%{prefix}%/bin/piqi" "%{prefix}%/bin/piqic"]
+  ["rm" "-f" "%{prefix}%/bin/piqi" "%{prefix}%/bin/piqic-ocaml"]
   ["ocamlfind" "remove" "piqi"]
 ]
-depends: ["ocamlfind" "easy-format" "ulex" "xmlm"]
+depends: [
+  "ocamlfind"
+  "easy-format"
+  "ulex"
+  "xmlm"
+]

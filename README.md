@@ -1,18 +1,18 @@
-This is an OPAM repository for development branches of
-[Piqi](https://github.com/alavrik/piqi).
+This is an [OPAM](http://opam.ocamlpro.com/) repository for the development
+(`master`) branch of [Piqi](https://github.com/alavrik/piqi).
 
-[OPAM](http://opam.ocamlpro.com/) is a package manager for OCaml.
+Usage
+-----
 
-Stable Piqi versions can be installed using the official [OPAM
-repository](https://github.com/OCamlPro/opam-repository) by running
+To install the latest development version of Piqi for OCaml:
+
+    opam repo add piqi git://github.com/piqi/piqi-opam-repo.git
 
     opam install piqi
 
-This command will install the latest stable version of Piqi that includes `piqi`
-and `piqic` executables and runtime libraries for OCaml.
+The `master` version should be picked by OPAM automatically.
 
-The latest development Piqi version can be installed by adding the following
-OPAM repository as a remote before running `opam install piqi`.
+Note that the latest stable Piqi version can be installed using the official
+[OPAM repository](https://github.com/OCamlPro/opam-repository) by running just
 
-    opam remote add piqi git://github.com/alavrik/piqi-opam-repo.git
-
+    opam install piqi
