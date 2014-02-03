@@ -1,5 +1,6 @@
 This is an [OPAM](http://opam.ocamlpro.com/) repository for the development
-(`master`) branch of [Piqi](https://github.com/alavrik/piqi).
+(`master`) branches of [piqi/piqilib](https://github.com/alavrik/piqi) and
+[piqi-ocaml](https://github.com/alavrik/piqi-ocaml).
 
 Usage
 -----
