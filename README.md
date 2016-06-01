@@ -1,4 +1,15 @@
-This is an [OPAM](http://opam.ocamlpro.com/) repository for the development
+**THIS REPOSITORY IS DEPRECATED**
+
+To install development versions of piqi and piqilib use opam pinning instead:
+
+
+    opam pin add --dev-repo piqi
+    opam pin add --dev-repo piqilib
+
+
+**OLD README:**
+
+This is an [OPAM](http://opam.ocaml.org/) repository for the development
 (`master`) branches of [piqi/piqilib](https://github.com/alavrik/piqi) and
 [piqi-ocaml](https://github.com/alavrik/piqi-ocaml).
 
@@ -14,6 +25,6 @@ To install the latest development version of Piqi for OCaml:
 The `master` version should be picked by OPAM automatically.
 
 Note that the latest stable Piqi version can be installed using the official
-[OPAM repository](https://github.com/OCamlPro/opam-repository) by running just
+[OPAM repository](https://github.com/ocaml/opam-repository) by running just
 
     opam install piqi
